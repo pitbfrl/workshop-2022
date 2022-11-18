@@ -1,0 +1,5 @@
+navigation : #FFFFFF , #747675
+
+background : #131313
+
+footer background : #212121

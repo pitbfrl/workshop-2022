@@ -1,0 +1,206 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background: #172133;
+}
+.logo {
+    width: 23%;
+}
+p{
+    bottom: 0%;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+nav {
+    display: flex;
+    gap: 45px;
+    padding: 4% 5% 0 0;
+    
+}
+.banner {
+    position: relative;
+}
+.content p {
+    position: absolute;
+    top: 47%;
+    left: 3%;
+    color: white;
+}
+button {
+    color: white;
+    font-weight: bold;
+    padding: 10px 40px;
+    background-color: rgb(12, 12, 74);
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow:  0 8px 16px 0 grey;
+    text-decoration: none;
+    border: none;
+}
+.checkboc{
+    cursor: pointer;
+
+}
+input[type="text"]{
+    width: 100%
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.col-12{
+    width: 100%;
+}
+.col-6{
+    width: 40%;
+}
+.content {
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+footer {
+    background: #f5f5f5;
+    width: 100%;
+    display: block;
+}
+footer a {
+    transition: .2s;
+}
+footer a:hover {
+    color: #007edb;
+}
+.main-footer-cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15vw;
+    margin-top: 5%;
+    height: 50vh;
+    padding: 5% 0 0 0;
+    position: relative;
+}
+footer h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 1.5vw;
+    padding: 0 0 3% 0;
+}
+footer hr {
+    background: rgb(173, 171, 171);
+    width: 150%;
+    height: 1px;
+    border: none;
+}
+.hr-3 {
+    width: 100%;
+}
+.links-cont {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    padding: 5% 0 0 0;
+}
+.links-cont a {
+    color: rgb(137, 136, 136);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 1.2vw;
+    text-decoration: none;
+}
+.number {
+    color: rgb(137, 136, 136);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 2vw;
+    text-align: center;
+    margin: 5% 0 0 0;
+}
+.svg-cont {
+    display: flex;
+    width: 100%;
+    gap: 3vw;
+    justify-content: center;
+    margin: 15% 0 0 0;
+}
+.svg-cont img {
+    width: 8%;
+}
+.ftr-3 {
+    width: 28%;
+}
+.button-ftr-cont {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5% 0 5%;
+    position: relative;
+    bottom: 8vh;
+}
+.btn-1-ftr {
+    background: #3c3947;
+    border: none;
+    width: 45vw;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    font-weight: lighter;
+    height: 45px;
+    cursor: pointer;
+    transition: .2s;
+    box-shadow: none;
+}
+.btn-2-ftr {
+    background: white;
+    border: none;
+    width: 45vw;
+    color: #3c3947;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    font-weight: lighter;
+    height: 45px;
+    cursor: pointer;
+    transition: .2s;
+    box-shadow: none;
+}
+.footer-rndm-bg {
+    background: white;
+    width: 80vw;
+    padding: 0 5% 0 5%;
+    position: relative;
+    bottom: 7vh;
+    display: block;
+    margin: 0 auto;
+    height: 5vw;
+}
+.legals-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10% 0 10%;
+}
+.legals-cont a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 1vw;
+    color: #3c3947;
+    transition: .2s;
+}
+.legals-cont a:hover {
+    color: #007edb;
+}
+.legals-cont hr {
+    width: 1px;
+    height: 30px;
+    background: #3c3947;
+    border: none;
+}

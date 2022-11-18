@@ -1,0 +1,417 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+}
+
+header {
+    background: #172133;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    width: 8%;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color .1s;
+    position: relative;
+}
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -6px;
+    left: 0;
+    background-color: #028aeb;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    transform: scaleX(0);
+}
+nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+nav a:hover {
+    color: #028aeb;
+}
+nav {
+    display: flex;
+    gap: 4vw;
+    padding: 3% 5% 0 0;
+}
+.slider {
+    width: 100%;
+    position: absolute;
+}
+.btn-1 {
+    width: 12vw;
+    height: 6vh;
+    border: none;
+    color: white;
+    background: #007edb;
+    font-weight: light;
+    font-size: 1.2vw;
+    position: sticky;
+    margin: 30% 0 0 0;
+    left: 80%;
+    cursor: pointer;
+    transition: all .2s;
+}
+.btn-1:hover {
+    background: #028aeb;
+    transform: scale(1.01);
+}
+.infos-1 {
+    background: #172133;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    top: 8vh;
+}
+.infos-1 h1 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    padding: 3% 0 0 0;
+}
+.card-container-1 {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding: 3% 4% 0 4%;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: #007edb;
+    width: 30vh;
+    height: 27vh;
+    transition: transform .2s;
+}
+.card:hover {
+    transform: scale(1.08);
+    background: #028aeb;
+}
+.card img {
+    width: 30%;
+    padding: 0% 0 0 0;
+}
+.card h2 {
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: lighter;
+}
+.icon-3 {
+    margin: 13% 0 0 0;
+}
+.offres-titre {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 35px;
+    position: relative;
+    text-align: center;
+    top: 10vh;
+}
+.offres-1 {
+    position: relative;
+    top: 12vh;
+}
+.momentcars-cont {
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+}
+.momentcars-cont img {
+    width: 30vw;
+}
+.momentcars-cont h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 1.8vw;
+    padding: 0 0 0 2%;
+    margin: 2% 0 0 0;
+}
+.momentcars-cont p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 1.1vw;
+    padding: 0 0 0 2%;
+    color: rgb(133, 132, 132);
+    margin: 0;
+}
+.momentcars-cont button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 1vw;
+    margin: 4% 0 0 2%;
+    border: none;
+    width: 9vw;
+    height: 50px;
+    background: #133d5f;
+    color: white;
+    cursor: pointer;
+    transition: .2s;
+}
+.momentcars-cont button a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 1vw;
+    padding: 3%;
+}
+.momentcars-cont button:hover {
+    transform: scale(1.02);
+    background: #0c2437;
+}
+.bestsellers-titre {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 35px;
+    text-align: center;
+    margin: 13% 0 1% 0;
+}
+.bestsellers-cont {
+    display: flex;
+    justify-content: center;
+    margin: 3% 0 0 0;
+    height: 42vh;
+}
+.bestsellers-cont img {
+    width: 26vw;
+    position: relative;
+    top: 10vh;
+}
+.bestsellers-cont div {
+    border: .05Px solid rgb(233, 227, 227);
+    height: 100%;
+}
+.bestsellers-cont h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 15vh;
+}
+.bestsellers-cont button {
+    background: #007edb;
+    color: white;
+    border: none;
+    width: 9vw;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 5vh;
+    font-size: 1vw;
+    cursor: pointer;
+    transition: all .2s;
+}
+.bestsellers-cont button:hover {
+    transform: scale(1.03);
+    background: #028aeb;
+}
+.actualite-titre {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 35px;
+    text-align: center;
+    margin: 3% 0 0  0;
+}
+.actualite-lien {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 22px;
+    text-align: center;
+    display: block;
+    margin: 1% 0 0 0;
+    text-decoration: none;
+    color: rgb(98, 96, 96);
+}
+.actualite-cont {
+    display: flex;
+    gap: 3px;
+    width: 90%;
+    justify-content: center;
+    padding: 3% 0 0 6%;
+}
+.actualite-cont p {
+    font-size: .9vw;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 0% 0 0;
+    width: 98%;
+    color: rgb(98, 96, 96);
+}
+.actualite-cont img {
+    width: 44.2vw;
+}
+.actualite-cont p a {
+    text-decoration: none;
+    color: rgb(98, 96, 96);
+}
+.btn-2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 1vw;
+    border: none;
+    width: 15vw;
+    height: 50px;
+    background: #133d5f;
+    color: white;
+    cursor: pointer;
+    transition: all .2s;
+}
+.btn-2:hover {
+    transform: scale(1.02);
+    background: #0c2437;
+}
+footer {
+    background: #f5f5f5;
+    width: 100%;
+    display: block;
+}
+footer a {
+    transition: .2s;
+}
+footer a:hover {
+    color: #007edb;
+}
+.main-footer-cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15vw;
+    margin-top: 5%;
+    height: 50vh;
+    padding: 5% 0 0 0;
+    position: relative;
+}
+footer h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 1.5vw;
+    padding: 0 0 3% 0;
+}
+footer hr {
+    background: rgb(173, 171, 171);
+    width: 150%;
+    height: 1px;
+    border: none;
+}
+.hr-3 {
+    width: 100%;
+}
+.links-cont {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    padding: 5% 0 0 0;
+}
+.links-cont a {
+    color: rgb(137, 136, 136);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 1.2vw;
+    text-decoration: none;
+}
+.number {
+    color: rgb(137, 136, 136);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 2vw;
+    text-align: center;
+    margin: 5% 0 0 0;
+}
+.svg-cont {
+    display: flex;
+    width: 100%;
+    gap: 3vw;
+    justify-content: center;
+    margin: 15% 0 0 0;
+}
+.svg-cont img {
+    width: 8%;
+}
+.ftr-3 {
+    width: 28%;
+}
+.button-ftr-cont {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5% 0 5%;
+    position: relative;
+    bottom: 8vh;
+}
+.btn-1-ftr {
+    background: #3c3947;
+    border: none;
+    width: 45vw;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    font-weight: lighter;
+    height: 45px;
+    cursor: pointer;
+    transition: .2s;
+}
+.btn-2-ftr {
+    background: white;
+    border: none;
+    width: 45vw;
+    color: #3c3947;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    font-weight: lighter;
+    height: 45px;
+    cursor: pointer;
+    transition: .2s;
+}
+.footer-rndm-bg {
+    background: white;
+    width: 80vw;
+    padding: 0 5% 0 5%;
+    position: relative;
+    bottom: 7vh;
+    display: block;
+    margin: 0 auto;
+    height: 5vw;
+}
+.legals-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10% 0 10%;
+}
+.legals-cont a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 1vw;
+    color: #3c3947;
+    transition: .2s;
+}
+.legals-cont a:hover {
+    color: #007edb;
+}
+.legals-cont hr {
+    width: 1px;
+    height: 30px;
+    background: #3c3947;
+    border: none;
+}
